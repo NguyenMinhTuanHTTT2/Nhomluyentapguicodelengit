@@ -114,10 +114,11 @@ body{
 .product{
     width: 250px;
     height: 350px;
-    background-color: yellow;
+    background-color:white;
     position: absolute;
     padding: 0;
     display: none;
+    z-index: 1;
 }
 .product >li{
     position: relative;
@@ -173,61 +174,327 @@ body{
     
 }
 .wrapper-slide{
-    display: flex;
+    /* display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 100vh;
+    min-width: 100vh; */
 }
 #slide{
-    width: 1110px;
-    height: 800px;
+   width: 1110px;  
+   position: relative;
+   margin: 0 auto;
+}
+.chervons{
+    position: absolute;
+    font-size: 40px;
+    top: 50%;
+    color: white;
+    padding-left: 20px;
+    z-index: 5;
+}
+.chervons i:last-child{
+    position: relative;
+    left: 980px;
+}
+.slide-img{
+    width: 100%;
+    height: 415px;
+    position: relative;
     overflow: hidden;
-    border-radius: 10px;
-   
 }
-.sub-slide input[type='radio']{
-    display: none;
-}
-.sub-slide{
-    width: 500%;
-    display: flex;
-}
+.slide-img img{
+    object-fit: cover;
+   width: 100%;
+   display: block;
 
-.slide-active{
-    transition: 0.5s;
 }
 .active-slide{
-    position: absolute;
-    width: 1110px;
-    height: 30px;
     display: flex;
-    margin-top: 0px;
     justify-content: center;
-    align-items: center;
+     position: absolute;
+     left: 45%;
+
 }
-.active-slide label{
-    width: 15px;
-    height: 15px;
+.active-slide span{
+    border: 1px solid black;
     border-radius: 50%;
-    border: 2px solid rgb(232, 192, 119);
-    margin: 0 5px;
-  
-}
-.active-slide label:hover{
-    background-color: chartreuse;
-}
-
-#radio1:checked ~ .slide-active{
-    margin-left: 0;
-
-}
-#radio2:checked ~ .slide-active{
-    margin-left: -20%;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
    
 }
-#radio3:checked ~ .slide-active{
-    margin-left: -40%;
+
+#flash-section{
+    margin-top: 150px;
+}
+
+.time-title{
+    display: flex;
+    background-color: #fff7f7;
+    position: relative;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.time-title a{
+    text-decoration: none;
+    display: block;
+    background-color: #cab2b4;
+    height: 31px;
+    width: 87px;
+  text-align: center;
+  line-height: 31px;
+  margin:  0 25px;
+  border-radius: 8px;
+  color: white;
+}
+.time-title a:hover{
+    background-color: #eb395f;
+    display: block;
+}
+
+.flashsale{
+    background-image: url("img/anhnen.webp");
+}
+.flashsale-content{
+    flex: 1;
+}
+.flashsale-new{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 15px;
+    align-items: center;
+}
+.flashsale-new a{
+    text-decoration: none;
+    width: 155px;
+    height: 55px;
+    line-height: 55px;
+    color: white;
+    background-color: #eb395f;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.flash-home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.flash-home li{
+  margin: 0 15px;
+  width: 228px;
+  background-color:white ;
+}
+
+.flash-item{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+}
+.flash-item a{
+
+}
+
+.flash-product a,p{
+    text-decoration: none;
+}
+
+.flash-item a img{
+    width: 150px;
+    height: 150px;
+}
+.flash-product .flash-container{
+    color: black;
+    text-transform: uppercase;
+}
+
+
+
+
+.flash-sub-item,.flash-combo-lable{
+    display: none;
+}
+
+
+
+
+#container{
+    background-color: #fcfcfc;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.blog{
+    width: 1140px;
+    margin: auto;
+}
+#container::before{
+    content: "";
+    display: table; 
+}
+.blog-top h2{
+   font-size: 40px;
+    position: relative;
+  text-align: center;
+}
+.blog-bottom{
+    display: flex;
+    /* overflow-y: hidden; */
+    justify-content: space-between;
+    -webkit-box-pack: justify;
+    margin: 0;
+    padding-top: 40px;
+}
+.blog-item{
+    width: calc(33.33333% - 21px);
+    max-width: unset;
+}
+.blog-item a{
+    display: block;
+}
+#price{
+    margin-top: 20px;
+    background-color:rgb(71 212 34)
+}
+.price-list{
+    padding-top: 20px;
+}
+.list-item h2{
+    text-align: center;
+    font-size: 38px;
+}
+.infor-list{
+    list-style: none;
+    min-height: 300px;
+    background-color: orange;
+}
+.wrapper-list{
     
 }
+.list-menu{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    list-style: none;
+}
+.list-menu li{
+    /* padding: 15px 20px; */
+   
+    border: 2px solid #ccc;
+    background: #fff;
+    margin: 10px 20px;
+    width: 200px;
+    display: flex;
+}
+   
+
+.list-menu li a {
+   padding: 0 20px;
+   text-decoration: none;
+   width: 198px;
+   
+
+}
+.new-list{
+    width: 200px;
+}
+.sub-discount{
+    font-size: 18px;
+    display: flex;
+    background-color: #da2a52;
+    color:white;
+     border-radius: 50%; 
+     width:50px;
+    height: 50px;
+    line-height: 50px;
+    justify-content: center; 
+     margin-top: -150px;
+    position: relative; 
+}
+ 
+.sub-item a{
+   position: absolute;
+    margin-left: 0px;
+    margin-top: 25px;
+    border: 1px solid black;
+    background: red;
+    color: white;
+    height: 30px;
+   
+    line-height: 30px;
+    display: none;
+}
+.list-menu >li:hover .sub-item a{
+    display: block;
+}
+.combo{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; 
+   
+   
+}
+.combo-lable{
+    border-radius: 10px;
+    background-color: #fedfe2;
+    border: none;
+    position: absolute;
+  margin-top: 220px;
+  width: 70px;
+  height: 25px;
+}
+.product-infor{
+    text-align: center;
+    margin-top: 210px;
+    width:202px ;
+    margin-left: -194px;
+    background-color: yellow;
+}
+.product-infor a{
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.product-name{
+    margin: 8px;
+    display: -webkit-box;
+    max-width: 100%;
+    max-height: 34px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.product-name a{
+    font-size: 12px;
+}
+.product-price h3{
+        font-size: 12px;
+        text-decoration: line-through;
+        color: #131110;
+        margin: 4px 0;
+}
+.product-price span{
+    font-size: 15px;
+    color: red;
+
+}
+.product-infor-price{
+    font-size: 14px;
+    color: #d77373;
+    margin-top: 4px;
+}
+
+
+
+
+
+
 
 

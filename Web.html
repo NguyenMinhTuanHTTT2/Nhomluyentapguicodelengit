@@ -7,6 +7,7 @@
     <title>Web bán mỹ phẩm</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
+    <script src="slide.js"></script>
 </head>
 <body>
     <div id="header">
@@ -19,27 +20,27 @@
         <div class="new">
             <div class="news">
                 <div class="new-title">
-                    <p>  <span>Dịch vụ khách hàng :</span>
+                    <p>  <span class=discount>Dịch vụ khách hàng :</span>
                         <a href="">
                             <img src="img/anh3.svg" alt="">
                             cs.vn@sociolla.com
                         </a>
                         <a href="">
                             <img src="img/anh4.webp" alt="">
-                        <span>Sociolla VietNam</span>
+                        <span class=discount>Sociolla VietNam</span>
                         </a>
                         <a href="">
                             <img src="img/anh5.svg" alt="">
-                          <span>  Hỗ trợ khách hàng</span>
+                          <span class=discount>  Hỗ trợ khách hàng</span>
                         </a>
                         <a href="">
                             <img  src="img/anh6.svg" alt="" style="width: 26px; height: 18px;">
-                        <span> ID</span>
+                        <span class=discount> ID</span>
                         </a>
-                        <span>|</span>
+                        <span class=discount>|</span>
                         <a href="">
                             <img  src="img/anh7.svg" style="width: 26px; height: 18px; " alt="">
-                        <span> VN</span>
+                        <span class=discount> VN</span>
                         </a>
                     </p>
                 </div>
@@ -69,7 +70,7 @@
             <a href="">Đăng nhập</a>
         </div>
         <div class="shop">
-            <a href="" >  <span><i class="fa-solid fa-cart-shopping"></i></span> Giỏ hàng </a> 
+            <a href="" >  <span class=discount><i class="fa-solid fa-cart-shopping"></i></span> Giỏ hàng </a> 
         </div>
     </div>
     <div id="menu">
@@ -217,45 +218,328 @@
             <li><a href="#">Cửa hàng</a></li>
         </ul>
     </div>
-    <div class="wrapper-slide">
         <div id="slide">
-            <div class="sub-slide">
-                <input type="radio" name="" id="radio1">
-                <input type="radio" name="" id="radio2">
-                <input type="radio" name="" id="radio3">
-    
-                <div class="slide-active">
-                    <img src="img/anh10.avif" style="width: 1110px; height: 420px;" alt="">
-                </div>
-                <div class="slide-new">
-                    <img src="img/anh11.avif" style="width: 1110px; height: 420px;" alt="">
-                </div>
-                <div class="slide-content">
-                    <img src="img/anh12.avif" style="width: 1110px; height: 420px;" alt="">
-                </div>
-                
+            <div class="chervons">
+                <i class="fa-sharp fa-solid fa-circle-chevron-left"  onclick="side_slide(-1)"></i>
+                <i class="fa-sharp fa-solid fa-circle-chevron-right" onclick="side_slide(1)"></i>
             </div>
+            <div class="slide-img">
+                <img src="img/anh10.avif" alt="">
+                <img src="img/anh11.avif" alt="">
+                <img src="img/anh12.avif" alt="">
+                </div>
             <div class="active-slide">
-                <label for="radio1"></label>
-                <label for="radio2"></label>
-                <label for="radio3"></label>
+                <span onclick="btm_slide(1)"></span>
+                <span onclick="btm_slide(2)"></span>
+                <span onclick="btm_slide(3)"></span>
+            </div>
+        </div>
+    <div id="flash-section">
+        <div class="time-title">
+            <a href="">10:00</a>
+            <a href="">15:00</a>
+            <a href="">20:00</a>
+           
+        </div>
+        <div class="flashsale">
+            <div class="flash-content">
+                <div class="flashsale-new">
+                    <p><img src="img/anhsale.webp" alt=""></p>
+                    <a href="">Xem tất cả</a>
+                </div>
+                <div class="flash-wapper">
+                    <div class="flash-slide">
+                        <ul class="flash-home">
+                            <li>
+                                <div class="flash-item">
+                                    <a href="">
+                                        <img src="img/anh21.avif" alt="">
+                                        <span class="flash-infor"></span>
+                                    </a>
+                                    <div class="flash-sub-item">
+                                        <a href="" >Thêm vào giỏ hàng</a>
+                                    </div>
+                                    <div class="combo">
+                                        <button class="flash-combo-lable">Xem nhanh</button>
+                                    </div>
+                                </div>
+                                <div class="flash-product">
+                                    <a class="flash-container" href="">Curél</a>
+                                    <p class="flash-name"><a href=""> Kem Chống Nắng Curél UV Protection Face Cream SPF 30 PA+++ 30g </a></p>
+                                    <p class="flash-status"><a href="">30g</a></p>
+                                    <div class="flash-price">
+                                    <h3> 508.000 ₫ </h3>
+                                    <span> 431.800 ₫</span>
+                                    
+                                    </div>
+                                    <div class="flashsale-price">
+                                        <span>Đang mở bán</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flash-item">
+                                    <a href="">
+                                        <img src="img/anh22.avif" alt="">
+                                        <span class="flash-infor"></span>
+                                    </a>
+                                    <div class="flash-sub-item">
+                                        <a href="" >Thêm vào giỏ hàng</a>
+                                    </div>
+                                    <div class="combo">
+                                        <button class="flash-combo-lable">Xem nhanh</button>
+                                    </div>
+                                </div>
+                                <div class="flash-product">
+                                    <a class="flash-container" href="">Innisfree</a>
+                                    <p class="flash-name"><a href=""> Kem Dưỡng Sáng Da, Ngừa Lão Hóa Lựu Đỏ Innisfree Jeju Pomegranate Revitalizing Capsule Cream 50ml </a></p>
+                                    <p class="flash-status"><a href="">30g</a></p>
+                                    <div class="flash-price">
+                                    <h3> 570.000 ₫ </h3>
+                                    <span> 484.500 ₫</span>
+                                    
+                                    </div>
+                                    <div class="flashsale-price">
+                                        <span>Đang mở bán</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flash-item">
+                                    <a href="">
+                                        <img src="img/anh23.avif" alt="">
+                                        <span class="flash-infor"></span>
+                                    </a>
+                                    <div class="flash-sub-item">
+                                        <a href="" >Thêm vào giỏ hàng</a>
+                                    </div>
+                                    <div class="combo">
+                                        <button class="flash-combo-lable">Xem nhanh</button>
+                                    </div>
+                                </div>
+                                <div class="flash-product">
+                                    <a class="flash-container" href="">9 Wishes</a>
+                                    <p class="flash-name"><a href=""> Tinh Chất Trị Mụn, Làm Dịu Và Phục Hồi Da 9 Wishes Calm Ampule Serum 25ml </a></p>
+                                    <p class="flash-status"><a href="">30g</a></p>
+                                    <div class="flash-price">
+                                    <h3> 295.000 ₫ </h3>
+                                    <span> 179.950 ₫</span>
+                                    
+                                    </div>
+                                    <div class="flashsale-price">
+                                        <span>Đang mở bán</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flash-item">
+                                    <a href="">
+                                        <img src="img/anh24.avif" alt="">
+                                        <span class="flash-infor"></span>
+                                    </a>
+                                    <div class="flash-sub-item">
+                                        <a href="" >Thêm vào giỏ hàng</a>
+                                    </div>
+                                    <div class="combo">
+                                        <button class="flash-combo-lable">Xem nhanh</button>
+                                    </div>
+                                </div>
+                                <div class="flash-product">
+                                    <a class="flash-container" href="">Paula's Choice</a>
+                                    <p class="flash-name"><a href=""> Sữa Rửa Mặt Dịu Nhẹ Cho Da Thường & Khô Paula's Choice Calm Nourishing Cleanser Normal to Dry 198 ml </a></p>
+                                    <p class="flash-status"><a href="">30g</a></p>
+                                    <div class="flash-price">
+                                    <h3> 699.000 ₫ </h3>
+                                    <span> 599.200 ₫</span>
+                                    
+                                    </div>
+                                    <div class="flashsale-price">
+                                        <span>Đang mở bán</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="flash-item">
+                                    <a href="">
+                                        <img src="img/anh25.avif" alt="">
+                                        <span class="flash-infor"></span>
+                                    </a>
+                                    <div class="flash-sub-item">
+                                        <a href="" >Thêm vào giỏ hàng</a>
+                                    </div>
+                                    <div class="combo">
+                                        <button class="flash-combo-lable">Xem nhanh</button>
+                                    </div>
+                                </div>
+                                <div class="flash-product">
+                                    <a class="flash-container" href="">Megumi</a>
+                                    <p class="flash-name"><a href="">Dầu Gội Ngăn Rụng Tóc 50 Megumi Hair Fall Control Shampoo 250ml </a></p>
+                                    <p class="flash-status"><a href="">30g</a></p>
+                                    <div class="flash-price">
+                                    <h3> 170.000 ₫ </h3>
+                                    <span> 136.000 ₫</span>
+                                    
+                                    </div>
+                                    <div class="flashsale-price">
+                                        <span>Đang mở bán</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div id="time">
-        <div class="time-title">
-            
-        </div>
-        <div class="time-item">
-            <a href="">00:00</a>
-            <a href="">06:00</a>
-            <a href="">10:00</a>
-            <a href="">14:00</a>
-            <a href="">18:00</a>
-            <a href="">21:00</a>
-
+    <div id="container">
+        <div class="blog">
+            <div class="blog-top">
+                <h2>CHỈ CÓ TẠI SOCIOLLA</h2>
+            </div>
+            <div class="blog-bottom">
+                <div class="blog-item">
+                    <a href=""><img src="img/anh13.avif" style="width: 349px;
+                        height: 197px;" alt=""></a>
+                </div>
+                <div class="blog-item">
+                    <a href=""><img src="img/anh14.avif" style="width: 349px;
+                        height: 197px;" alt=""></a>
+                </div>
+                <div class="blog-item">
+                    <a href=""><img src="img/anh15.avif" style="width: 349px;
+                        height: 197px;" alt=""></a>
+                </div>
+            </div>
         </div>
     </div>
-    
+    <div id="price">
+        <div class="price-list">
+            <div class="list-item">
+                <h2>COMBO TIẾT KIỆM</h2>
+            </div>
+            <div class="infor-list">
+                <div class="wrapper-list">
+                    <ul class="list-menu">
+                        <li>
+                            <div class="new-list">
+                                <a href="">
+                                    <img src="img/anh16.avif" style="width: 150px; height: 150px;" alt="">
+                                    <span class=sub-discount>-27%</span>
+                                </a>
+                                <div class="sub-item">
+                                    <a href="" >Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="combo">
+                                    <button class="combo-lable">Combo</button>
+                                </div>
+                            </div>
+                            <div class="product-infor">
+                                <a href="">ESQA</a>
+                                <p class="product-name"><a href="">Combo Lớp Nền Hoàn Hảo - Mịn Lỳ & Lâu Trôi ESQA</a></p>
+                                <div class="product-price">
+                                    <h3> 815.000 ₫ </h3>
+                                    <span> 599.000 ₫</span>
+                                    <div class="product-infor-price">-216.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+                       
+                        <li>
+                            <div class="new-list">
+                                <a href="">
+                                    <img src="img/anh17.avif" style="width: 150px; height: 150px;" alt="">
+                                    <span class=sub-discount>-27%</span>
+                                </a>
+                                <div class="sub-item">
+                                    <a href="" >Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="combo">
+                                    <button class="combo-lable">Combo</button>
+                                </div>
+                            </div>
+                            <div class="product-infor">
+                                <a href="">Ariul</a>
+                                <p class="product-name"><a href=""> Combo Tinh Chất Dưỡng Sáng Da Eucerin 2x15ml Tặng Sữa Rửa Mặt Eucerin 150g </a></p>
+                                <div class="product-price">
+                                    <h3> 90.000 ₫ </h3>
+                                    <span> 45.000 ₫</span>
+                                    <div class="product-infor-price">-45.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new-list">
+                                <a href="">
+                                    <img src="img/anh18.avif" style="width: 150px; height: 150px;" alt="">
+                                    <span class=sub-discount>-27%</span>
+                                </a>
+                                <div class="sub-item">
+                                    <a href="" >Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="combo">
+                                    <button class="combo-lable">Combo</button>
+                                </div>
+                            </div>
+                            <div class="product-infor">
+                                <a href="">Rojukiss</a>
+                                <p class="product-name"><a href=""> Bộ 3 Mặt Nạ Giúp Ngăn Ngừa Mụn Và Cải Thiện Vết Thâm Mụn Rojukiss Acne Poreless 5x Intensive Mask </a></p>
+                                <div class="product-price">
+                                    <h3> 117.000 ₫ </h3>
+                                    <span> 88.000 ₫</span>
+                                    <div class="product-infor-price">-29.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new-list">
+                                <a href="">
+                                    <img src="img/anh19.avif" style="width: 150px; height: 150px;" alt="">
+                                    <span class=sub-discount>-27%</span>
+                                </a>
+                                <div class="sub-item">
+                                    <a href="" >Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="combo">
+                                    <button class="combo-lable">Combo</button>
+                                </div>
+                            </div>
+                            <div class="product-infor">
+                                <a href="">Eucerin</a>
+                                <p class="product-name"><a href=""> Combo Tinh Chất Dưỡng Sáng Da Eucerin 2x15ml Tặng Sữa Rửa Mặt Eucerin 150g </a></p>
+                                <div class="product-price">
+                                    <h3> 1.618.000 ₫ </h3>
+                                    <span> 935.015 ₫</span>
+                                    <div class="product-infor-price">-682.985 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="new-list">
+                                <a href="">
+                                    <img src="img/anh20.avif" style="width: 150px; height: 150px;" alt="">
+                                    <span class=sub-discount>-27%</span>
+                                </a>
+                                <div class="sub-item">
+                                    <a href="" >Thêm vào giỏ hàng</a>
+                                </div>
+                                <div class="combo">
+                                    <button class="combo-lable">Combo</button>
+                                </div>
+                            </div>
+                            <div class="product-infor">
+                                <a href="">Rojukiss</a>
+                                <p class="product-name"><a href=""> Bộ 3 Mặt Nạ Giảm Tình Trạng Lỗ Chân Lông To & Dưỡng Da Sáng Mịn Rojukiss Perfect Poreless 5x Intensive Mask </a></p>
+                                <div class="product-price">
+                                    <h3> 117.000 ₫ </h3>
+                                    <span> 88.000 ₫</span>
+                                    <div class="product-infor-price">-29.000 ₫</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
